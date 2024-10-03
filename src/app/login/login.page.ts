@@ -40,7 +40,7 @@ export class LoginPage implements OnInit {
       await alert.present();
 
 
-     }else if(this.email == 'user' && this.password == 'password'){
+     }else if(this.email == 'Joseph' && this.password == 'contraseña'){
         this.navCtrl.navigateForward('/home');
       }else{
         const alert = await this.alertController.create({
@@ -54,7 +54,7 @@ export class LoginPage implements OnInit {
 
     }
     togglePasswordVisibility() {
-      this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
+      this.passwordType = this.passwordType === 'contraseña' ? 'text' : 'contraseña';
     }
 
   ngOnInit() {
